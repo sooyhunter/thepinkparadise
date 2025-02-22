@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwiceParadice</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PinkParadise</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="./image/dex-screener-seeklogo.svg" alt="Dexscreener" width="30" height="30">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://t.me/thepinkparadise">
+                            <img src="./image/Telegram_logo.svg" alt="Telegram" width="30" height="30">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://x.com/pinkparadisetw">
+                            <img src="./image/twitter.png" alt="Twitter" width="30" height="30">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Контейнер для 3D модели -->
+    <div id="model-container"></div>
+    <!-- Увеличенная карточка с полем для ссылки -->
+    <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title">Pump fun</h5>
+            <input type="text" class="form-control" value="https://t.me/thepinkparadise" readonly>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Подключение Three.js и кастомного скрипта 3D модели -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Подключение OrbitControls и OBJLoader -->
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://threejs.org/examples/js/loaders/OBJLoader.js"></script>
+    <script src="js/model.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
