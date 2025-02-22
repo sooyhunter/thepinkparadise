@@ -135,6 +135,20 @@ body {
 
 /* Удаляем старую анимацию glowing */
 
+/* Стили для гамбургер-меню */
+.navbar-toggler {
+    border: 2px solid #fff;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link-text {
+    display: none;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .navbar-brand {
@@ -193,6 +207,38 @@ body {
         width: 20px;
         height: 20px;
         margin-left: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: linear-gradient(45deg, #9e8083, #ff69b4);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-link-text {
+        display: inline-block;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
     }
 }
 
