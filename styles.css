@@ -60,7 +60,7 @@ body {
 
 .card {
     position: absolute;
-    top: 50%;
+    top: 60%; /* Изменено с 50% на 60% */
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(45deg, #9e8083, #ff69b4, #ffb6c1, #9e8083);
@@ -76,6 +76,7 @@ body {
     border-radius: 10px;
     width: 80%; /* Увеличенная ширина */
     max-width: 600px; /* Максимальная ширина */
+    transition: top 0.3s ease; /* Добавляем плавную анимацию */
 }
 
 .card-title {
@@ -219,6 +220,7 @@ body {
         right: 0;
         padding: 1rem;
         border-radius: 0 0 10px 10px;
+        z-index: 1000; /* Добавляем z-index чтобы меню было поверх карточки */
     }
 
     .nav-link {
@@ -239,6 +241,10 @@ body {
 
     .nav-item {
         margin: 10px 0;
+    }
+
+    .card {
+        top: 70%; /* На мобильных устройствах опускаем еще ниже */
     }
 }
 
